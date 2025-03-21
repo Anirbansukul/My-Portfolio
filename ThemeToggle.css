@@ -1,0 +1,60 @@
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    outline: none;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.theme-toggle.light {
+    background-color: #fff;
+
+    color: #121212;
+
+}
+
+.theme-toggle.light:hover {
+    background-color: #f0f0f0;
+
+}
+
+
+.theme-toggle.dark {
+    background-color: #2c2c2c;
+
+    color: #ffcc00;
+
+}
+
+.theme-toggle.dark:hover {
+    background-color: #3e3e3e;
+
+}
+
+.theme-toggle svg {
+    transition: transform 0.3s ease;
+
+}
+
+.theme-toggle.light svg {
+    transform: rotate(0deg);
+
+}
+
+.theme-toggle.dark svg {
+    transform: rotate(180deg);
+
+}

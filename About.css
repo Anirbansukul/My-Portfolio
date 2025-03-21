@@ -1,0 +1,86 @@
+.about {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 50px 20px;
+}
+
+#tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-text-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.about-text {
+    max-width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    white-space: nowrap;
+
+    display: inline-block;
+    position: relative;
+    animation: slideCycle 10s linear infinite;
+}
+
+.about-text:hover {
+    animation-play-state: paused;
+}
+
+@keyframes slideCycle {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #ff8c00, #ff0080, #6a5acd, #1e90ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

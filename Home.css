@@ -1,0 +1,191 @@
+#home {
+    position: relative;
+    height: 100vh;
+    background-color: #000 !important;
+    background-image: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.home-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.home-subtitle {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+    font-size: 1.2rem;
+    color: #ffcc00;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    width: 0;
+    animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.reverse-typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    width: 0;
+    animation: reverse-typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite, colorCycle 5s linear infinite;
+}
+
+@keyframes reverse-typing {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes colorCycle {
+    0% {
+        color: #ff6347;
+
+    }
+
+    20% {
+        color: #32cd32;
+
+    }
+
+    40% {
+        color: #1e90ff;
+
+    }
+
+    60% {
+        color: #ff1493;
+
+    }
+
+    80% {
+        color: #8a2be2;
+
+    }
+
+    100% {
+        color: #ff6347;
+
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.reverse-typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    width: 0;
+    animation: reverse-typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite, colorCycle 5s linear 1;
+}
+
+@keyframes reverse-typing {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes colorCycle {
+    0% {
+        color: #ff6347;
+
+    }
+
+    20% {
+        color: #32cd32;
+
+    }
+
+    40% {
+        color: #1e90ff;
+
+    }
+
+    60% {
+        color: #ff1493;
+
+    }
+
+    80% {
+        color: #8a2be2;
+
+    }
+
+    100% {
+        color: #ff6347;
+
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
